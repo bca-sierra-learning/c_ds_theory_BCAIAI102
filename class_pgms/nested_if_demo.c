@@ -9,15 +9,9 @@ int main(){         //execution starts from here
  printf("-----Welcome to DL-----");
 
 //core logic to determine certificate can be issued or not
-//nested if statement
- if(isIndian == 1){
-  if(age>= 18){
-    if(isTestCleared){
-        if(paidFee == 500){
-            printf("DL can be issed");
-        }
-    }
+//nested if statement - Nationality->age->test clearance->fee payment
 
-  }
-}
+
+
+
 }

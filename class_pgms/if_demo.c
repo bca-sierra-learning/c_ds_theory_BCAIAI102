@@ -1,11 +1,11 @@
 #include<stdio.h>
 int main(){
-    int choice,firstnumber,secondnumber;
-    printf("----welcome to my calculator-------");
-    printf("1. Addition");
-    printf("2. Subtraction");
-    printf("3. Multiplication");
-    printf("4. Division");
+    int choice,firstnumber,secondnumber,result;
+    printf("----welcome to my calculator-------\n");
+    printf("1. Addition\n");
+    printf("2. Subtraction\n");
+    printf("3. Multiplication\n");
+    printf("4. Division\n");
     printf("Enter your choice:");
     scanf("%d",&choice);
     if(choice == 1){
@@ -14,8 +14,8 @@ int main(){
         scanf("%d",&firstnumber);
         printf("Enter the second number :");
         scanf("%d",&secondnumber);
-        int sum=firstnumber + secondnumber;
-        printf("The sum is : %d",sum);
+        result=firstnumber + secondnumber;
+        printf("The sum is : %d",result);
 
     }
     if(choice == 2){
@@ -24,15 +24,27 @@ int main(){
         scanf("%d",&firstnumber);
         printf("Enter the second number :");
         scanf("%d",&secondnumber);
-        int diffeence=firstnumber - secondnumber;
-        printf("The sum is : %d",diffeence);
+        result=firstnumber - secondnumber;
+        printf("The Difference is : %d",result);
     }
     if(choice == 3){
         //multiplication
+        printf("Enter the first number :");
+        scanf("%d",&firstnumber);
+        printf("Enter the second number :");
+        scanf("%d",&secondnumber);
+        result=firstnumber * secondnumber;
+        printf("The product is : %d",result);
     }
     if(choice == 4){
         //devision
+        printf("Enter the first number :");
+        scanf("%f",&firstnumber);
+        printf("Enter the second number :");
+        scanf("%d",&secondnumber);
+        result=firstnumber / secondnumber;
+        printf("The quotient is : %.2f",result);
     }
-    printf("Program terminated.....");
+    printf("\nProgram terminated.....");
     return 0;
 }
