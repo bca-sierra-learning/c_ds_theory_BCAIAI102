@@ -1,3 +1,5 @@
+//Pgm to demonstrate if statement
+//Addition,Subtraction,Multiplication,Division
 #include<stdio.h>
 int main(){
     int choice,firstnumber,secondnumber,result;

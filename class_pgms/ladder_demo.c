@@ -5,7 +5,7 @@ int main(){
     // int mymark;   // declaration
     // mymark=76;    //initialization
 
-    int mymark=76;
+    int mymark=76;  //declaration and initialisation
 
     if(mymark >=90){
         printf("Grade : Distinction");
@@ -19,4 +19,5 @@ int main(){
     else{
         printf("Grade : PASS");
     }
+    printf("Program terminated..");
 }
