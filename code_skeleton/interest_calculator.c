@@ -19,14 +19,16 @@ int main() {
     float principal = 1000.0;
     float rateOfInterest = 5.0; // percent per year
     int years;
+    float interest;
     float amount = principal;
-
- 
-
+    printf("Enter number of years:");
+    scanf("%d",&years);
     printf("---- Interest Growth ----\n");
 
     for (int year = 1; year <= years; year++) {
-       
+       interest = amount * rateOfInterest / 100;
+       amount=interest + amount;
+       printf("Year %d:\t Interest =Rs %.2f\n",year,interest);
     }
 
     printf("--------------------------\n");
